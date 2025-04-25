@@ -1,229 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>简约博客</title>
-    <style>
-        /* 基础样式 */
-        :root {
-            --primary-color: #3498db;
-            --text-color: #333;
-            --light-text: #666;
-            --background: #fff;
-            --light-bg: #f8f9fa;
-            --border: #eee;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        /* 头部样式 */
-        header {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .site-title {
-            font-size: 28px;
-            font-weight: 700;
-            color: var(--text-color);
-        }
-        
-        .site-description {
-            margin-top: 5px;
-            color: var(--light-text);
-            font-size: 16px;
-        }
-        
-        nav {
-            margin-top: 15px;
-        }
-        
-        nav a {
-            margin-right: 15px;
-            font-size: 16px;
-            color: var(--light-text);
-        }
-        
-        nav a:hover {
-            color: var(--primary-color);
-        }
-        
-        /* 文章列表样式 */
-        .post-list {
-            list-style: none;
-        }
-        
-        .post-item {
-            margin-bottom: 30px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .post-item:last-child {
-            border-bottom: none;
-        }
-        
-        .post-date {
-            display: block;
-            font-size: 14px;
-            color: var(--light-text);
-            margin-bottom: 8px;
-        }
-        
-        .post-title {
-            font-size: 22px;
-            margin-bottom: 12px;
-            color: var(--text-color);
-        }
-        
-        .post-excerpt {
-            color: var(--light-text);
-            margin-bottom: 15px;
-        }
-        
-        .read-more {
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        /* 页脚样式 */
-        footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: var(--light-text);
-            font-size: 14px;
-            text-align: center;
-        }
-        
-        /* 文章页面样式 */
-        .article {
-            margin-bottom: 40px;
-        }
-        
-        .article-title {
-            font-size: 26px;
-            margin-bottom: 10px;
-        }
-        
-        .article-meta {
-            font-size: 14px;
-            color: var(--light-text);
-            margin-bottom: 25px;
-        }
-        
-        .article-content p {
-            margin-bottom: 20px;
-        }
-        
-        .article-content h2 {
-            font-size: 22px;
-            margin: 30px 0 15px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        /* 响应式调整 */
-        @media (max-width: 600px) {
-            body {
-                padding: 15px;
-            }
-            
-            .post-title {
-                font-size: 20px;
-            }
-            
-            .article-title {
-                font-size: 24px;
-            }
-        }
-    </style>
+    <title>您的博客名称</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 头部 -->
-    <header>
-        <h1 class="site-title">简约博客</h1>
-        <p class="site-description">记录生活与思考</p>
-        <nav>
-            <a href="index.html">首页</a>
-            <a href="about.html">关于</a>
-            <a href="archive.html">归档</a>
-        </nav>
-    </header>
-    
-    <!-- 内容区域 -->
-    <main>
-        <ul class="post-list">
-            <!-- 文章1 -->
-            <li class="post-item">
-                <span class="post-date">2025年4月20日</span>
-                <h2 class="post-title"><a href="post1.html">如何搭建一个简洁的静态博客</a></h2>
-                <p class="post-excerpt">静态博客因其简单、安全和高性能而越来越受欢迎。本文将介绍如何使用GitHub Pages创建一个简洁的静态博客站点。</p>
-                <a href="post1.html" class="read-more">阅读全文 →</a>
-            </li>
-            
-            <!-- 文章2 -->
-            <li class="post-item">
-                <span class="post-date">2025年4月15日</span>
-                <h2 class="post-title"><a href="post2.html">极简主义设计的5个核心原则</a></h2>
-                <p class="post-excerpt">极简主义不仅是一种设计风格，更是一种生活态度。本文探讨极简主义设计的五个核心原则，帮助你创造更有效的设计。</p>
-                <a href="post2.html" class="read-more">阅读全文 →</a>
-            </li>
-            
-            <!-- 文章3 -->
-            <li class="post-item">
-                <span class="post-date">2025年4月10日</span>
-                <h2 class="post-title"><a href="post3.html">提高工作效率的7个小技巧</a></h2>
-                <p class="post-excerpt">在信息爆炸的时代，如何保持高效率工作变得越来越重要。这里分享7个简单但有效的小技巧，帮助你更好地管理时间和精力。</p>
-                <a href="post3.html" class="read-more">阅读全文 →</a>
-            </li>
-            
-            <!-- 文章4 -->
-            <li class="post-item">
-                <span class="post-date">2025年4月5日</span>
-                <h2 class="post-title"><a href="post4.html">我最喜欢的5本编程书籍</a></h2>
-                <p class="post-excerpt">作为一名程序员，阅读优质的编程书籍是提升技能的重要途径。本文分享我认为对编程思维影响最深远的5本书籍。</p>
-                <a href="post4.html" class="read-more">阅读全文 →</a>
-            </li>
-            
-            <!-- 文章5 -->
-            <li class="post-item">
-                <span class="post-date">2025年4月1日</span>
-                <h2 class="post-title"><a href="post5.html">旅行中的意外收获</a></h2>
-                <p class="post-excerpt">旅行不仅是对风景的欣赏，更是对内心的探索。分享我最近一次旅行中的意外收获和思考。</p>
-                <a href="post5.html" class="read-more">阅读全文 →</a>
-            </li>
-        </ul>
-    </main>
-    
-    <!-- 页脚 -->
-    <footer>
-        <p>© 2025 简约博客 · 由 GitHub Pages 提供支持</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>您的博客名称</h1>
+            <p>您的博客简介</p>
+        </header>
+
+        <main>
+            <section class="articles">
+                <h2>文章列表</h2>
+                <ul>
+                    <li>
+                        <a href="post1.html">文章标题 1</a>
+                        <span class="post-date">2023-10-27</span>
+                    </li>
+                    <li>
+                        <a href="post2.html">文章标题 2</a>
+                        <span class="post-date">2023-10-26</span>
+                    </li>
+                    <li>
+                        <a href="post3.html">文章标题 3</a>
+                        <span class="post-date">2023-10-25</span>
+                    </li>
+                    </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 您的名称</p>
+        </footer>
+    </div>
 </body>
 </html>

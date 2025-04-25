@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif; /* 使用无衬线字体 */
+    line-height: 1.6; /* 设置行高 */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 轻微的背景色 */
+    color: #333; /* 深灰色文字 */
+}
+
+.container {
+    max-width: 800px; /* 限制内容最大宽度 */
+    margin: 20px auto; /* 居中显示，上下外边距为 20px */
+    padding: 0 20px; /* 左右内边距 */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* 增大标题字号 */
+}
+
+header p {
+    color: #777; /* 浅灰色简介文字 */
+    font-size: 1.1em;
+}
+
+main {
+    margin-bottom: 40px;
+}
+
+.articles ul {
+    list-style: none; /* 移除列表默认样式 */
+    padding: 0;
+}
+
+.articles li {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* 文章之间用细线分隔 */
+}
+
+.articles li:last-child {
+    border-bottom: none; /* 最后一个列表项没有下边线 */
+}
+
+.articles a {
+    text-decoration: none; /* 移除链接下划线 */
+    color: #333; /* 链接颜色与正文相同 */
+    font-size: 1.3em; /* 增大文章标题字号 */
+    font-weight: bold;
+}
+
+.articles a:hover {
+    color: #007bff; /* 鼠标悬停时改变链接颜色 */
+}
+
+.post-date {
+    display: block; /* 日期单独占一行 */
+    color: #777; /* 日期文字颜色 */
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* 子页面样式 */
+article h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.post-content {
+    margin-top: 20px;
+}
+
+.post-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.post-content ul {
+    list-style: disc; /* 列表使用圆点 */
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
