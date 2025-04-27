@@ -9,10 +9,18 @@ my @array;
 open HD,"index.html" or die $!;
 
 while(<HD>) {
-  if (/<ul>/) {
+  if (/<div class="container">/) {
     push @array,$_;
-    push @array, "                        <li><a href=\"$filename\">$title</a>\n";
-    push @array, "                        <span class=\"post-date\">$date</span></li>\n";
+
+    my $items = <<END;
+    <div class="post">
+      <h2><a href="$filename">$title</a></h2>
+      <time>$date</time>
+    </div>
+END
+
+    push @array,$items;
+
   }else {
     push @array,$_;
   }
