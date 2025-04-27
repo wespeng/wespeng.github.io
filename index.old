@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="wes.png">
+
+    <title>wespeng's blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>wespeng's blog</h1>
+            <p>Life in the Age of AI</p>
+        </header>
+
+        <main>
+            <section class="articles">
+                <h2>文章列表</h2>
+                <ul>
+                        <li><a href="chinese-medicine-is-just-deep-learning.html">中医是深度学习思想</a>
+                        <span class="post-date">2025-04-27</span></li>
+                        <li><a href="my-thoughts-on-ziweidoushu.html">我对紫微斗数的看法</a>
+                        <span class="post-date">2025-04-27</span></li>
+                        <li><a href="thinking-standalone-in-AI-age.html">AI时代如何保持独立思考</a>
+                        <span class="post-date">2025-04-27</span></li>
+                        <li><a href="Job-Opportunities.html">2025年我们的招聘需求</a>
+                        <span class="post-date">2025-04-26</span></li>
+                        <li><a href="plan-for-5.1-holidays.html">五一假期旅行计划</a>
+                        <span class="post-date">2025-04-26</span></li>
+                        <li><a href="AI-requirements-in-power-industry.html">一线工程师观察到的电力行业AI需求</a>
+                        <span class="post-date">2025-04-26</span></li>
+                        <li><a href="why-I-choose-timescaledb.html">小规模电力数据的数仓选型</a>
+                        <span class="post-date">2025-04-26</span></li>
+                        <li><a href="life-with-AI-age.html">拥抱AI时代</a>
+                        <span class="post-date">2025-04-26</span></li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+          <p>&copy; 2025 <a href="mailto:wespeng@currently.com">wespeng@currently.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
